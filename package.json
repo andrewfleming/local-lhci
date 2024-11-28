@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "lhci-server": "lhci server --port=9001 --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./lhci-database.sqlite",
+    "lhci-run": "git commit --allow-empty -m \"$(date +\"%d %b %Y %H:%M\")\" && lhci autorun",
+    "lhci-wizard": "lhci wizard"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "@lhci/server": "^0.14.0",
+    "sqlite3": "^5.1.7"
+  }
+}
